@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/d58f339f3f.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -25,15 +27,28 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto navList">
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='#'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='index.html'"
+                                type="button">
                                 Home</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='#'" type="button">
-                                About me & Proyects</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="location.href='views/aboutme.html'" type="button">
+                                About me</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='#'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="location.href='views/proyectos.html'" type="button">
+                                Proyects</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="location.href='views/curriculum.html'" type="button">
+                                Download my CV</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="location.href='views/contacto.html'" type="button">
                                 Contact</button>
                         </li>
                     </ul>
@@ -42,6 +57,37 @@
         </nav>
     </header>
 
+
+    <main>
+        <div class="home">
+            <!--  <img class="picture " src="img/neon.jpg" alt=""> -->
+            <div class="container text-top">
+                <h1>Alvaro Sopeña Figueroa</h1>
+                <div class="description py-3">
+                    <h2>Portfolio - Web Developer </h2>
+                    <h2> HTML | CSS | JavaScript & React</h2>
+                    <h2> WordPress</h2>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-3 my-4">
+        <div class="justify-content-center ">
+            <div class="social-buttons">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li><a href="https://www.linkedin.com/in/alvaro-sopena-figueroa/" class="fa fa-linkedin"
+                            target="_blank"></a></li>
+                    <li><a href="https://instagram.com/alvarosopena" class="fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://mailto:alvarosopenaf@gmail.com" class="fa fa-envelope" target="_blank"></a>
+                    </li>
+                    <li><a href=" https://wa.me/+5492614668479" class="fa fa-whatsapp" target="_blank"></a></li>
+                </ul>
+            </div>
+            <p> Made with love @ Alvaro Sopeña Figueroa </p>
+        </div>
+    </footer>
 
 </body>
 
