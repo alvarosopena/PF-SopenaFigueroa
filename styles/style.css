@@ -79,7 +79,7 @@ li {
 .home {
   /* para que el header no tape el body */
   padding-top: 100px;
-  background-image: url(/PF-SopenaFigueroa/img/neon.jpg);
+  background-image: url(../img/neon2.jpg);
   height: 500px;
   background-position: 100% 60%;
   background-repeat: no-repeat;
