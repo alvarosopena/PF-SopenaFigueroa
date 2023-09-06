@@ -5,9 +5,9 @@ SEGUNDA ENTREGA
 Apartir de la segunda entrega se va creando el Proyecto Final 
 Segunda etapa: HTML, CSS, Bootstrap o Grids + Flexbox + Git y GitHub
 
-Segunda entrega:
+Segunda entrega: 07/09/2023
 
-Deploy:
+Deploy: https://pf-sopenafigueroa.netlify.app/
 
 Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
 
