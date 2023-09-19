@@ -77,14 +77,13 @@ li {
 /* BODY */
 
 .home {
-  /* para que el header no tape el body */
-  padding-top: 100px;
+  padding-top: 200px;
+  min-height: 80vh;
   background-image: url(../img/neon2.jpg);
-  height: 500px;
-  background-position: 100% 60%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-}
+ }
 
 .description {
   color: #fafafa;
