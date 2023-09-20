@@ -1,31 +1,23 @@
 @import "header-nav";
-@import "header-nav";
 @import "footer";
-
 @import "media";
 
 @import "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-.colores {
-  color: #fafafa;
-  color: #1b1f22;
-  color: #092429;
-  color: #322566;
-  color: #24d1d3;
-  color: #e1ffb4;
-  color: #ff56d1;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 30px;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: $col-black;
 }
 
 li {
@@ -35,45 +27,47 @@ li {
 /* BODY */
 
 .home {
-  padding-top: 100px;
-  min-height: 80vh;
+  padding-top: 15%;
+  min-height: 85vh;
   background-image: url(../img/neon2.jpg);
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 
 .description {
-  color: #fafafa;
-}
-
-.picture {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  object-fit: cover;
-  padding: 0px;
-  width: 100%;
+  color: $col-white;
 }
 
 .text-top {
-  color: black;
+  color: $col-black;
   margin-top: 10%;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+  text-shadow: 0 0 7px $col-white, 0 0 10px $col-white, 0 0 21px $col-white,
     0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255),
     0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
 }
 
-h1 {
-  font-size: 3rem;
+/* Index */
+.deploy {
+  h2 {
+    color: $col-black;
+    font-size: 70px;
+    letter-spacing: 5px;
+    animation: move linear 2000ms infinite;
+  }
+  .logo {
+    p {
+      color: $col-white;
+    }
+  }
 }
 
 /* About */
 
 .aboutContainer {
-  background-color: #1b1f22;
-  color: #fff;
+  background-color: $col-black;
+  color: $col-white;
   /* para que el header no tape el body */
   padding-top: 10%;
   height: auto;
@@ -83,9 +77,10 @@ h1 {
 .about {
   h1 {
     font-size: 50px;
-    color: #fafafa;
+    color: $col-white;
   }
 }
+
 .pictureHero {
   height: 500px;
   margin-top: -100px;
@@ -103,10 +98,10 @@ h1 {
 
 .proyects {
   padding-top: 60px;
-  background-color: #092429;
+  background-color: $col-black;
   h1 {
     font-size: 50px;
-    color: #092429;
+    color: $col-darkblue;
   }
   p {
     font-size: 15px;
@@ -122,8 +117,8 @@ h1 {
 .card {
   max-width: 0 auto;
   border-radius: 0;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px #fff;
+  border: 2px solid $col-white;
+  box-shadow: 0 0 10px $col-white;
   img {
     border-radius: 0;
   }
@@ -141,4 +136,77 @@ h1 {
 
 .js {
   color: #e1ffb4;
+}
+
+/* curriculum */
+.cvContainer {
+  background-color: black;
+  color: $col-white;
+  /* para que el header no tape el body */
+  padding-top: 10%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.cvimg {
+  transform: scaleX(-1); /* Invertir verticalmente */
+}
+
+/* contact */
+.contactMe {
+  /* para que el header no tape el body */
+  padding-top: 10%;
+  min-height: 85vh;
+  background-color: $col-black;
+  color: $col-white;
+  height: auto;
+  padding-bottom: 40px;
+
+  .btn-submit {
+    cursor: pointer;
+    background-color: $col-lightblue;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: $col-pink;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1),
+      3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
 }

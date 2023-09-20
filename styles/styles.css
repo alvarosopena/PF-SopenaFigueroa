@@ -27,34 +27,6 @@
   background-color: #1b1f22;
 }
 
-/* HEADER Y NAVBAR */
-.name {
-  font-size: 25px;
-}
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  z-index: 1000;
-}
-
-.navbar-toggler-icon {
-  color: #fafafa;
-  display: inline-block;
-  width: 1.5em;
-  height: 2.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
-.navList li button:hover {
-  background-color: #1b1f22;
-}
-
 /* Footer */
 footer {
   color: #1b1f22;
@@ -118,12 +90,7 @@ footer {
     font-size: 11px;
   }
 }
-@media (min-width: 500px) {
-  .text-top {
-    margin-top: 5%;
-  }
-}
-.colores {
+paleta {
   color: #fafafa;
   color: #1b1f22;
   color: #092429;
@@ -138,9 +105,13 @@ body {
   font-size: 30px;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: #1b1f22;
 }
 
 li {
@@ -149,42 +120,40 @@ li {
 
 /* BODY */
 .home {
-  padding-top: 100px;
-  min-height: 80vh;
+  padding-top: 15%;
+  min-height: 85vh;
   background-image: url(../img/neon2.jpg);
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 
 .description {
   color: #fafafa;
 }
 
-.picture {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  object-fit: cover;
-  padding: 0px;
-  width: 100%;
-}
-
 .text-top {
-  color: black;
+  color: #1b1f22;
   margin-top: 10%;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+  text-shadow: 0 0 7px #fafafa, 0 0 10px #fafafa, 0 0 21px #fafafa, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
 }
 
-h1 {
-  font-size: 3rem;
+/* Index */
+.deploy h2 {
+  color: #1b1f22;
+  font-size: 70px;
+  letter-spacing: 5px;
+  animation: move linear 2000ms infinite;
+}
+.deploy .logo p {
+  color: #fafafa;
 }
 
 /* About */
 .aboutContainer {
   background-color: #1b1f22;
-  color: #fff;
+  color: #fafafa;
   /* para que el header no tape el body */
   padding-top: 10%;
   height: auto;
@@ -207,7 +176,7 @@ h1 {
 /* Proyects */
 .proyects {
   padding-top: 60px;
-  background-color: #092429;
+  background-color: #1b1f22;
 }
 .proyects h1 {
   font-size: 50px;
@@ -224,8 +193,8 @@ h1 {
 .card {
   max-width: 0 auto;
   border-radius: 0;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px #fff;
+  border: 2px solid #fafafa;
+  box-shadow: 0 0 10px #fafafa;
 }
 .card img {
   border-radius: 0;
@@ -243,6 +212,58 @@ h1 {
 
 .js {
   color: #e1ffb4;
+}
+
+/* curriculum */
+.cvContainer {
+  background-color: black;
+  color: #fafafa;
+  /* para que el header no tape el body */
+  padding-top: 10%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.cvimg {
+  transform: scaleX(-1); /* Invertir verticalmente */
+}
+
+/* contact */
+.contactMe {
+  /* para que el header no tape el body */
+  padding-top: 10%;
+  min-height: 85vh;
+  background-color: #1b1f22;
+  color: #fafafa;
+  height: auto;
+  padding-bottom: 40px;
+}
+.contactMe .btn-submit {
+  cursor: pointer;
+  background-color: #24d1d3;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.contactMe .btn-submit:hover {
+  background-color: #ff56d1;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsl(180, 100%, 50%), -3px -3px 0 hsl(180, 100%, 50%), -2px -2px 0 hsl(180, 100%, 50%), -1px -1px 0 hsl(180, 100%, 50%), 4px 4px 0 hsl(0, 100%, 50%), 3px 3px 0 hsl(0, 100%, 50%), 2px 2px 0 hsl(0, 100%, 50%), 1px 1px 0 hsl(0, 100%, 50%);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsl(0, 100%, 50%), -3px 3px 0 hsl(0, 100%, 50%), -2px 2px 0 hsl(0, 100%, 50%), -1px 1px 0 hsl(0, 100%, 50%), 4px -4px 0 hsl(180, 100%, 50%), 3px -3px 0 hsl(180, 100%, 50%), 2px -2px 0 hsl(180, 100%, 50%), 1px -1px 0 hsl(180, 100%, 50%);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsl(180, 100%, 50%), 3px 3px 0 hsl(180, 100%, 50%), 2px 2px 0 hsl(180, 100%, 50%), 1px 1px 0 hsl(180, 100%, 50%), -4px -4px 0 hsl(0, 100%, 50%), -3px -3px 0 hsl(0, 100%, 50%), -2px -2px 0 hsl(0, 100%, 50%), -1px -1px 0 hsl(0, 100%, 50%);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Despues el CSS del proyecto -->
     <link rel="stylesheet" href="styles/styles.css">
-    <meta name="description" content="Portfolio Alvaro Sopeña Figueroa - Web Developer - HTML | CSS | SCSS | Bootstrap | JavaScript | React | NodeJS | Express | ... " >
+    <meta name="description"
+        content="Portfolio Alvaro Sopeña Figueroa - Web Developer - HTML | CSS | SCSS | Bootstrap | JavaScript | React | NodeJS | Express | ... ">
     <title>Proyecto Final CoderHouse</title>
 </head>
 
@@ -28,8 +29,8 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto navList">
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='index.html'"
-                                type="button">
+                            <button class="btn btn-sm btn-outline-secondary active" onclick="location.href='index.html'"
+                                type="button" >
                                 Home</button>
                         </li>
                         <li class="nav-item">
@@ -62,7 +63,7 @@
     <main>
         <div class="home">
             <!--  <img class="picture " src="img/neon.jpg" alt=""> -->
-            <div class="container text-top">
+            <div class="container text-top text-center">
                 <h1>Alvaro Sopeña Figueroa</h1>
                 <div class="description py-3">
                     <h2>Portfolio - Web Developer </h2>
@@ -70,8 +71,45 @@
                     <h2> WordPress</h2>
                 </div>
             </div>
-        </div>
 
+            <section class=" text-center deploy">
+                <h2 class="container">
+                    my sites
+                </h2>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="container">
+                            <div class="mb-3 text-center">
+                                <a href="https://github.com/alvarosopena" target="_blank">
+                                    <img class="img-fluid w-25" src="./img/github-icon-1.svg" alt="Github icon">
+                                    <p class="text-white  mt-2">Github</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="container">
+                            <div class="mb-3 text-center">
+                                <a href="https://www.linkedin.com/in/alvaro-sopena-figueroa/" target="_blank">
+                                    <img class="img-fluid w-25" src="./img/linkedin-icon-1.svg" alt="LinkedIn icon">
+                                    <p class="text-white  mt-2">LinkedIn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="container">
+                            <div class="mb-3 text-center">
+                                <a href="https://app.netlify.com/teams/alvarosopena/overview" target="_blank">
+                                    <img class="img-fluid w-25" src="./img/netlify.svg" alt="Netlify icon">
+                                    <p class="text-white mt-2">Netlify</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="py-3 my-4">

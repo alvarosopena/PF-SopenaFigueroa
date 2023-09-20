@@ -5,14 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Add icon library -->
-   <script src="https://kit.fontawesome.com/d58f339f3f.js" crossorigin="anonymous"></script>
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/d58f339f3f.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Despues el CSS del proyecto -->
     <link rel="stylesheet" href="../styles/styles.css">
-    <meta name="description" content="Portfolio Alvaro Sopeña Figueroa - Web Developer - HTML | CSS | SCSS | Bootstrap | JavaScript | React | NodeJS | Express | ... " >
+    <meta name="description"
+        content="Portfolio Alvaro Sopeña Figueroa - Web Developer - HTML | CSS | SCSS | Bootstrap | JavaScript | React | NodeJS | Express | ... ">
     <title>Proyecto Final CoderHouse</title>
 </head>
 
@@ -22,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand name" href="#">@alvarosopena</a>
+                <a class="navbar-brand name" href="../index.html">@alvarosopena</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,23 +31,28 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto navList">
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='../index.html'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='../index.html'"
+                                type="button">
                                 Home</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='aboutme.html'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='aboutme.html'"
+                                type="button">
                                 About me</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='proyectos.html'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='proyectos.html'"
+                                type="button">
                                 Proyects</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='curriculum.html'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary active" onclick="location.href='curriculum.html'"
+                                type="button">
                                 Download my CV</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='contacto.html'" type="button">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='contacto.html'"
+                                type="button">
                                 Contact</button>
                         </li>
                     </ul>
@@ -55,22 +61,32 @@
         </nav>
     </header>
 
-
     <main>
-        <div class="container mainContainer">
-            <div class="main-top cv">
-                <div class="hero">
-                    <img src="../img/line.jpg" id=cvhero alt="foto cv">
-                </div>
-                <div class="text-top">
-                    <h1>Baja mi curriculum</h1>
-                    <h2> <a href="../files/CV - Alvaro Sopeña Figueroa - es.pdf" download="Cv Alvaro Sopeña Figueroa">
-                            Haciendo click acá!</a></h2>
+        <div class="cvContainer">
+            <div class="container">
+                <div class="row mt-2">
+                    <!-- Columna para la imagen -->
+                    <div class="col-md-6 text-center cvimg">
+                        <img class=" img-fluid" src="../img/line.jpg" alt="">
+                    </div>
+                    <!-- Columna para el encabezado -->
+                    <div class="text-top about col-md-6 text-center mb-1 aling-items-end about">
+                        <a href="../files/CV - Alvaro Sopeña Figueroa - es.pdf"
+                                download="Cv Alvaro Sopeña Figueroa">
+                        <h1>Download my CV</h1>
+                        <h2 class="lh-sm fs-4 text-justify">  Just 1 click!</a></h2>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </main>
 
+
+
+    <!--     <p> <i class="fa-brands fa-github"></i></p>
+               <p><i class="fa-brands fa-square-github"></i></p> -->
     <footer class="py-3 my-4">
         <div class="justify-content-center ">
             <div class="social-buttons">
