@@ -1,0 +1,29 @@
+/* HEADER Y NAVBAR */
+
+.name {
+  font-size: 25px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+.navbar-toggler-icon {
+  color: #fafafa;
+  display: inline-block;
+  width: 1.5em;
+  height: 2.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.navList {
+  li button:hover {
+    background-color: #1b1f22;
+  }
+}

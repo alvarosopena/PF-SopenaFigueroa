@@ -1,0 +1,28 @@
+@media (min-width: 995px) {
+  .nav-item {
+    margin: 10px;
+  }
+  .navList {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 995px) {
+  .navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-item {
+    margin-right: 1px;
+  }
+  .nav-item button {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 500px) {
+  .text-top {
+    margin-top: 5%;
+  }
+}
