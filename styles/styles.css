@@ -90,6 +90,11 @@ footer {
     font-size: 11px;
   }
 }
+@media (max-width: 600px) {
+  .aboutCv {
+    padding-top: 50%;
+  }
+}
 paleta {
   color: #fafafa;
   color: #1b1f22;
@@ -178,13 +183,12 @@ li {
   padding-top: 60px;
   background-color: #1b1f22;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
-  background-position: center;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .proyects h1 {
-  font-size: 90px;
-  color: #092429;
+  font-size: 70px;
 }
 .proyects h2 {
   font-size: 60px;
@@ -229,7 +233,6 @@ li {
   padding-top: 10%;
   padding-bottom: 40px;
   height: auto;
-  background-color: black;
   color: #fafafa;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
   background-position: 50% 0%;
@@ -237,6 +240,13 @@ li {
   background-size: cover;
   height: 90vh;
 }
+.cvContainer h1 {
+  color: #fafafa;
+}
+.cvContainer h2 {
+  font-size: 20px;
+}
+
 .cvimg {
   transform: scaleX(-1); /* Invertir verticalmente */
 }

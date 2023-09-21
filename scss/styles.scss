@@ -29,7 +29,8 @@ li {
 
 .home {
   @include topConfig(15%, 50px, 0, 85vh);
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/neon2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/neon2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,7 +69,6 @@ li {
   @include basicConfig;
   background-color: $col-black;
   color: $col-white;
- 
 }
 
 .about {
@@ -96,24 +96,21 @@ li {
 .proyects {
   padding-top: 60px;
   background-color: $col-black;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-
-/*   h1 {
-    font-size: 90px;
-    color: $col-darkblue;
-  } */
-  h2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/perrociber3.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+h1{
+  font-size: 70px;
+}
+  h2 {
     font-size: 60px;
   }
   p {
     font-size: 15px;
   }
 }
-
 
 .card {
   max-width: 0 auto;
@@ -150,20 +147,18 @@ li {
 /* curriculum */
 .cvContainer {
   @include basicConfig;
-  background-color: black;
   color: $col-white;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/perrociber.jpg);
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
-
-  h1{
-
+  h1 {
+    color: $col-white;
   }
-
   h2{
-
+    font-size: 20px;
   }
 }
 
@@ -177,7 +172,7 @@ li {
   @include topConfig(0, 0, 0, 85vh);
   @include basicConfig;
   color: $col-white;
- background-image:url(../img/black.jpg);
+  background-image: url(../img/black.jpg);
   h1 {
     color: $col-black;
     font-size: 50px;
