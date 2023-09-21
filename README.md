@@ -1,5 +1,5 @@
 # PF-SopenaFigueroa
-
+-------------------------------------------------------------
 TERCER ENTREGA
 
 Se agrega SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, tamaños de imágenes, y otros detalles de diseño
@@ -9,7 +9,7 @@ Deploy: https://pf-sopenafigueroa.netlify.app/
 
 Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
 
-
+-------------------------------------------------------------
 SEGUNDA ENTREGA 
 
 Apartir de la segunda entrega se va creando el Proyecto Final 
@@ -21,6 +21,7 @@ Deploy: https://pf-sopenafigueroa.netlify.app/
 
 Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
 
+-------------------------------------------------------------
 PRIMERA ENTREGA 
 
 Primer proyecto de la Carrera de Desarrollo Web Frontend con React en CoderHouse. 
