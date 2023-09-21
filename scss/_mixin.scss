@@ -1,0 +1,12 @@
+@mixin topConfig($padding-top, $padding-bottom, $height, $min-height) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  height: height;
+  min-height: $min-height;
+}
+
+@mixin basicConfig {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
+}

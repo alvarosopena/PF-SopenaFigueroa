@@ -3,6 +3,7 @@
 @import "media";
 
 @import "variables";
+@import "mixin";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
@@ -27,13 +28,11 @@ li {
 /* BODY */
 
 .home {
-  padding-top: 15%;
-  min-height: 85vh;
-  background-image: url(../img/neon2.jpg);
+  @include topConfig(15%, 50px, 0, 85vh);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/neon2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
 }
 
 .description {
@@ -41,8 +40,8 @@ li {
 }
 
 .text-top {
-  color: $col-black;
   margin-top: 10%;
+  color: $col-black;
   text-shadow: 0 0 7px $col-white, 0 0 10px $col-white, 0 0 21px $col-white,
     0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255),
     0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
@@ -66,12 +65,10 @@ li {
 /* About */
 
 .aboutContainer {
+  @include basicConfig;
   background-color: $col-black;
   color: $col-white;
-  /* para que el header no tape el body */
-  padding-top: 10%;
-  height: auto;
-  padding-bottom: 40px;
+ 
 }
 
 .about {
@@ -82,8 +79,9 @@ li {
 }
 
 .pictureHero {
-  height: 500px;
   margin-top: -100px;
+  height: 500px;
+  margin-bottom: -70px;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -91,7 +89,6 @@ li {
     0% 80%
   ); /* Recorta un 20% de la parte inferior de la imagen */
   z-index: -1;
-  margin-bottom: -70px;
 }
 
 /* Proyects */
@@ -99,20 +96,24 @@ li {
 .proyects {
   padding-top: 60px;
   background-color: $col-black;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+
   h1 {
-    font-size: 50px;
+    font-size: 90px;
     color: $col-darkblue;
+  }
+  h2{
+    font-size: 60px;
   }
   p {
     font-size: 15px;
   }
 }
 
-.subtitle {
-  h2 {
-    font-size: 30px;
-  }
-}
 
 .card {
   max-width: 0 auto;
@@ -125,27 +126,45 @@ li {
 }
 
 .card-body {
-  padding-top: 5px;
-  padding-bottom: 0 1px;
-  height: auto;
+  @include topConfig(5px, 0 1px, auto, 0);
 }
 
 .wp {
-  color: #322566;
+  color: $col-blue;
 }
 
 .js {
-  color: #e1ffb4;
+  color: $col-yellow;
+  text-shadow: 0 0 7px $col-pink, 0 0 10px $col-pink, 0 0 21px $col-pink,
+    0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255),
+    0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+}
+
+.react {
+  color: $col-lightblue;
+  text-shadow: 0 0 7px $col-blue, 0 0 10px $col-blue, 0 0 21px $col-blue,
+    0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255),
+    0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
 }
 
 /* curriculum */
 .cvContainer {
+  @include basicConfig;
   background-color: black;
   color: $col-white;
-  /* para que el header no tape el body */
-  padding-top: 10%;
-  height: auto;
-  padding-bottom: 40px;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+
+  h1{
+
+  }
+
+  h2{
+
+  }
 }
 
 .cvimg {
@@ -153,14 +172,19 @@ li {
 }
 
 /* contact */
+
 .contactMe {
-  /* para que el header no tape el body */
-  padding-top: 10%;
-  min-height: 85vh;
-  background-color: $col-black;
+  @include topConfig(0, 0, 0, 85vh);
+  @include basicConfig;
   color: $col-white;
-  height: auto;
-  padding-bottom: 40px;
+ background-image:url(../img/black.jpg);
+  h1 {
+    color: $col-black;
+    font-size: 50px;
+    letter-spacing: 5px;
+    animation: move linear 2000ms infinite;
+    text-align: center;
+  }
 
   .btn-submit {
     cursor: pointer;

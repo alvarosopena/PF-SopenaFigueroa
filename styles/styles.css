@@ -121,12 +121,13 @@ li {
 /* BODY */
 .home {
   padding-top: 15%;
+  padding-bottom: 50px;
+  height: height;
   min-height: 85vh;
-  background-image: url(../img/neon2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/neon2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
 }
 
 .description {
@@ -134,8 +135,8 @@ li {
 }
 
 .text-top {
-  color: #1b1f22;
   margin-top: 10%;
+  color: #1b1f22;
   text-shadow: 0 0 7px #fafafa, 0 0 10px #fafafa, 0 0 21px #fafafa, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
 }
 
@@ -152,12 +153,11 @@ li {
 
 /* About */
 .aboutContainer {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
   background-color: #1b1f22;
   color: #fafafa;
-  /* para que el header no tape el body */
-  padding-top: 10%;
-  height: auto;
-  padding-bottom: 40px;
 }
 
 .about h1 {
@@ -166,28 +166,31 @@ li {
 }
 
 .pictureHero {
-  height: 500px;
   margin-top: -100px;
+  height: 500px;
+  margin-bottom: -70px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%); /* Recorta un 20% de la parte inferior de la imagen */
   z-index: -1;
-  margin-bottom: -70px;
 }
 
 /* Proyects */
 .proyects {
   padding-top: 60px;
   background-color: #1b1f22;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .proyects h1 {
-  font-size: 50px;
+  font-size: 90px;
   color: #092429;
+}
+.proyects h2 {
+  font-size: 60px;
 }
 .proyects p {
   font-size: 15px;
-}
-
-.subtitle h2 {
-  font-size: 30px;
 }
 
 .card {
@@ -203,7 +206,8 @@ li {
 .card-body {
   padding-top: 5px;
   padding-bottom: 0 1px;
-  height: auto;
+  height: height;
+  min-height: 0;
 }
 
 .wp {
@@ -212,31 +216,49 @@ li {
 
 .js {
   color: #e1ffb4;
+  text-shadow: 0 0 7px #ff56d1, 0 0 10px #ff56d1, 0 0 21px #ff56d1, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+}
+
+.react {
+  color: #24d1d3;
+  text-shadow: 0 0 7px #322566, 0 0 10px #322566, 0 0 21px #322566, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
 }
 
 /* curriculum */
 .cvContainer {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
   background-color: black;
   color: #fafafa;
-  /* para que el header no tape el body */
-  padding-top: 10%;
-  height: auto;
-  padding-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
 }
-
 .cvimg {
   transform: scaleX(-1); /* Invertir verticalmente */
 }
 
 /* contact */
 .contactMe {
-  /* para que el header no tape el body */
-  padding-top: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: height;
   min-height: 85vh;
-  background-color: #1b1f22;
-  color: #fafafa;
-  height: auto;
+  padding-top: 10%;
   padding-bottom: 40px;
+  height: auto;
+  color: #fafafa;
+  background-image: url(../img/black.jpg);
+}
+.contactMe h1 {
+  color: #1b1f22;
+  font-size: 50px;
+  letter-spacing: 5px;
+  animation: move linear 2000ms infinite;
+  text-align: center;
 }
 .contactMe .btn-submit {
   cursor: pointer;
