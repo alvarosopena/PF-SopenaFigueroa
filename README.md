@@ -1,12 +1,14 @@
 # PF-SopenaFigueroa
 
 TERCER ENTREGA
+
 Se agrega SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, tamaños de imágenes, y otros detalles de diseño
 Segunda entrega: 21/09/2023
 
 Deploy: https://pf-sopenafigueroa.netlify.app/
 
 Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
+
 
 SEGUNDA ENTREGA 
 
