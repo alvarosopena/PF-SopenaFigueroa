@@ -1,7 +1,71 @@
-/* HEADER Y NAVBAR */
+/* Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* Colores */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+paleta {
+  color: #fafafa;
+  color: #1b1f22;
+  color: #092429;
+  color: #322566;
+  color: #24d1d3;
+  color: #e1ffb4;
+  color: #ff56d1;
+}
+
+/* HEADER Y NAVBAR */
 .name {
   font-size: 25px;
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c;
+  -webkit-animation: blink 1s infinite alternate;
+  animation: blink 1s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+.btn-outline-secondary {
+  --bs-btn-border-color: none;
+}
+
+.navList .nav-item button {
+  color: #fafafa;
+  border-radius: 0;
+  animation: infinite resplandorAnimation 1s;
+}
+.navList .nav-item button:hover {
+  background-color: #ff56d1;
 }
 
 .navbar {
@@ -9,22 +73,318 @@
   width: 100%;
   height: auto;
   z-index: 1000;
+  margin: 0 auto; /* Esto centra el elemento horizontalmente */
+}
+.navbar .container-fluid {
+  color: #092429;
+}
+
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
 }
 
 .navbar-toggler-icon {
-  color: #fafafa;
-  display: inline-block;
   width: 1.5em;
-  height: 2.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  height: 1.5em;
+  background-image: url(../img/hamburguesa2.png);
 }
 
-.navList li button:hover {
+.bg-body-tertiary {
+  background-color: #092429 !important;
+}
+
+@keyframes resplandorAnimation {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1f22;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BODY */
+.home {
+  padding-top: 15%;
+  padding-bottom: 50px;
+  height: height;
+  min-height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/neon2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  color: #fafafa;
+}
+
+.text-top {
+  margin-top: 10%;
+  color: #1b1f22;
+  text-shadow: 0 0 7px #fafafa, 0 0 10px #fafafa, 0 0 21px #fafafa, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+}
+
+/* Index */
+.deploy h2 {
+  color: #1b1f22;
+  font-size: 70px;
+  letter-spacing: 5px;
+  animation: move linear 2000ms infinite;
+}
+.deploy .logo p {
+  color: #fafafa;
+}
+
+@media (min-width: 995px) {
+  .nav-item {
+    margin: 10px;
+  }
+  .navList {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 995px) {
+  .navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-item {
+    margin-right: 1px;
+  }
+  .nav-item button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutCv {
+    padding-top: 50%;
+  }
+}
+/* about me - cards */
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}
+/* About */
+.aboutContainer {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
   background-color: #1b1f22;
+  color: #fafafa;
+}
+
+.about h1 {
+  font-size: 50px;
+  color: #fafafa;
+}
+
+.pictureHero {
+  margin-top: -100px;
+  height: 500px;
+  margin-bottom: -70px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%); /* Recorta un 20% de la parte inferior de la imagen */
+  z-index: -1;
+}
+
+.services {
+  margin: 1%;
+  font-size: 25px;
+  color: #fafafa;
+}
+
+.cards-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-service {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+}
+.card-service .card_image {
+  width: inherit;
+  height: inherit;
+}
+.card-service .card_image img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.card-service .card_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -60px;
+  height: 40px;
+}
+.card-service:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+/* Proyects */
+.proyects {
+  padding-top: 60px;
+  background-color: #1b1f22;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.proyects h1 {
+  font-size: 70px;
+}
+.proyects h2 {
+  font-size: 60px;
+}
+.proyects p {
+  font-size: 15px;
+}
+
+.card {
+  max-width: 0 auto;
+  border-radius: 0;
+  border: 2px solid #fafafa;
+  box-shadow: 0 0 10px #fafafa;
+}
+.card img {
+  border-radius: 0;
+}
+
+.card-body {
+  padding-top: 5px;
+  padding-bottom: 0 1px;
+  height: height;
+  min-height: 0;
+}
+
+.wp {
+  color: #322566;
+}
+
+.js {
+  color: #e1ffb4;
+  text-shadow: 0 0 7px #ff56d1, 0 0 10px #ff56d1, 0 0 21px #ff56d1, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+}
+
+.react {
+  color: #24d1d3;
+  text-shadow: 0 0 7px #322566, 0 0 10px #322566, 0 0 21px #322566, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
+}
+
+/* curriculum */
+.cvContainer {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
+  color: #fafafa;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.cvContainer h1 {
+  color: #1b1f22;
+  font-size: 50px;
+  letter-spacing: 5px;
+  animation: move linear 2000ms infinite;
+  text-align: center;
+}
+.cvContainer h2 {
+  font-size: 20px;
+}
+
+.cvimg {
+  transform: scaleX(-1); /* Invertir verticalmente */
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsl(180, 100%, 50%), -3px -3px 0 hsl(180, 100%, 50%), -2px -2px 0 hsl(180, 100%, 50%), -1px -1px 0 hsl(180, 100%, 50%), 4px 4px 0 hsl(0, 100%, 50%), 3px 3px 0 hsl(0, 100%, 50%), 2px 2px 0 hsl(0, 100%, 50%), 1px 1px 0 hsl(0, 100%, 50%);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsl(0, 100%, 50%), -3px 3px 0 hsl(0, 100%, 50%), -2px 2px 0 hsl(0, 100%, 50%), -1px 1px 0 hsl(0, 100%, 50%), 4px -4px 0 hsl(180, 100%, 50%), 3px -3px 0 hsl(180, 100%, 50%), 2px -2px 0 hsl(180, 100%, 50%), 1px -1px 0 hsl(180, 100%, 50%);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsl(180, 100%, 50%), 3px 3px 0 hsl(180, 100%, 50%), 2px 2px 0 hsl(180, 100%, 50%), 1px 1px 0 hsl(180, 100%, 50%), -4px -4px 0 hsl(0, 100%, 50%), -3px -3px 0 hsl(0, 100%, 50%), -2px -2px 0 hsl(0, 100%, 50%), -1px -1px 0 hsl(0, 100%, 50%);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
+  }
+}
+/* contact */
+.contactMe {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: height;
+  min-height: 85vh;
+  padding-top: 10%;
+  padding-bottom: 40px;
+  height: auto;
+  color: #fafafa;
+  background-image: url(../img/black.jpg);
+}
+.contactMe h1 {
+  color: #1b1f22;
+  font-size: 50px;
+  letter-spacing: 5px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.contactMe h1:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+.contactMe .btn-submit {
+  cursor: pointer;
+  background-color: #24d1d3;
+  color: #fafafa;
+  transition: background-color 0.3s, color 0.3s;
+}
+.contactMe .btn-submit:hover {
+  background-color: #ff56d1;
 }
 
 /* Footer */
@@ -95,6 +455,14 @@ footer {
     padding-top: 50%;
   }
 }
+/* about me - cards */
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}
+/* Fuentes */
+/* Colores */
 paleta {
   color: #fafafa;
   color: #1b1f22;
@@ -103,199 +471,6 @@ paleta {
   color: #24d1d3;
   color: #e1ffb4;
   color: #ff56d1;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-a {
-  text-decoration: none;
-  color: #1b1f22;
-}
-
-li {
-  list-style-type: none;
-}
-
-/* BODY */
-.home {
-  padding-top: 15%;
-  padding-bottom: 50px;
-  height: height;
-  min-height: 85vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/neon2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.description {
-  color: #fafafa;
-}
-
-.text-top {
-  margin-top: 10%;
-  color: #1b1f22;
-  text-shadow: 0 0 7px #fafafa, 0 0 10px #fafafa, 0 0 21px #fafafa, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
-}
-
-/* Index */
-.deploy h2 {
-  color: #1b1f22;
-  font-size: 70px;
-  letter-spacing: 5px;
-  animation: move linear 2000ms infinite;
-}
-.deploy .logo p {
-  color: #fafafa;
-}
-
-/* About */
-.aboutContainer {
-  padding-top: 10%;
-  padding-bottom: 40px;
-  height: auto;
-  background-color: #1b1f22;
-  color: #fafafa;
-}
-
-.about h1 {
-  font-size: 50px;
-  color: #fafafa;
-}
-
-.pictureHero {
-  margin-top: -100px;
-  height: 500px;
-  margin-bottom: -70px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%); /* Recorta un 20% de la parte inferior de la imagen */
-  z-index: -1;
-}
-
-/* Proyects */
-.proyects {
-  padding-top: 60px;
-  background-color: #1b1f22;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber3.png);
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.proyects h1 {
-  font-size: 70px;
-}
-.proyects h2 {
-  font-size: 60px;
-}
-.proyects p {
-  font-size: 15px;
-}
-
-.card {
-  max-width: 0 auto;
-  border-radius: 0;
-  border: 2px solid #fafafa;
-  box-shadow: 0 0 10px #fafafa;
-}
-.card img {
-  border-radius: 0;
-}
-
-.card-body {
-  padding-top: 5px;
-  padding-bottom: 0 1px;
-  height: height;
-  min-height: 0;
-}
-
-.wp {
-  color: #322566;
-}
-
-.js {
-  color: #e1ffb4;
-  text-shadow: 0 0 7px #ff56d1, 0 0 10px #ff56d1, 0 0 21px #ff56d1, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
-}
-
-.react {
-  color: #24d1d3;
-  text-shadow: 0 0 7px #322566, 0 0 10px #322566, 0 0 21px #322566, 0 0 42px rgb(0, 4, 255), 0 0 82px rgb(0, 4, 255), 0 0 92px rgb(0, 4, 255), 0 0 102px rgb(0, 4, 255), 0 0 151px rgb(0, 4, 255);
-}
-
-/* curriculum */
-.cvContainer {
-  padding-top: 10%;
-  padding-bottom: 40px;
-  height: auto;
-  color: #fafafa;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/perrociber.jpg);
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-}
-.cvContainer h1 {
-  color: #fafafa;
-}
-.cvContainer h2 {
-  font-size: 20px;
-}
-
-.cvimg {
-  transform: scaleX(-1); /* Invertir verticalmente */
-}
-
-/* contact */
-.contactMe {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: height;
-  min-height: 85vh;
-  padding-top: 10%;
-  padding-bottom: 40px;
-  height: auto;
-  color: #fafafa;
-  background-image: url(../img/black.jpg);
-}
-.contactMe h1 {
-  color: #1b1f22;
-  font-size: 50px;
-  letter-spacing: 5px;
-  animation: move linear 2000ms infinite;
-  text-align: center;
-}
-.contactMe .btn-submit {
-  cursor: pointer;
-  background-color: #24d1d3;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s;
-}
-.contactMe .btn-submit:hover {
-  background-color: #ff56d1;
-}
-
-@keyframes move {
-  0% {
-    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
-  }
-  25% {
-    text-shadow: -4px -4px 0 hsl(180, 100%, 50%), -3px -3px 0 hsl(180, 100%, 50%), -2px -2px 0 hsl(180, 100%, 50%), -1px -1px 0 hsl(180, 100%, 50%), 4px 4px 0 hsl(0, 100%, 50%), 3px 3px 0 hsl(0, 100%, 50%), 2px 2px 0 hsl(0, 100%, 50%), 1px 1px 0 hsl(0, 100%, 50%);
-  }
-  50% {
-    text-shadow: -4px 4px 0 hsl(0, 100%, 50%), -3px 3px 0 hsl(0, 100%, 50%), -2px 2px 0 hsl(0, 100%, 50%), -1px 1px 0 hsl(0, 100%, 50%), 4px -4px 0 hsl(180, 100%, 50%), 3px -3px 0 hsl(180, 100%, 50%), 2px -2px 0 hsl(180, 100%, 50%), 1px -1px 0 hsl(180, 100%, 50%);
-  }
-  75% {
-    text-shadow: 4px 4px 0 hsl(180, 100%, 50%), 3px 3px 0 hsl(180, 100%, 50%), 2px 2px 0 hsl(180, 100%, 50%), 1px 1px 0 hsl(180, 100%, 50%), -4px -4px 0 hsl(0, 100%, 50%), -3px -3px 0 hsl(0, 100%, 50%), -2px -2px 0 hsl(0, 100%, 50%), -1px -1px 0 hsl(0, 100%, 50%);
-  }
-  100% {
-    text-shadow: 4px -4px 0 hsl(0, 100%, 50%), 3px -3px 0 hsl(0, 100%, 50%), 2px -2px 0 hsl(0, 100%, 50%), 1px -1px 0 hsl(0, 100%, 50%), -4px 4px 0 hsl(180, 100%, 50%), -3px 3px 0 hsl(180, 100%, 50%), -2px 2px 0 hsl(180, 100%, 50%), -1px 1px 0 hsl(180, 100%, 50%);
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

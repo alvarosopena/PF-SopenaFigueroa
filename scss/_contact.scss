@@ -1,0 +1,38 @@
+/* contact */
+
+.contactMe {
+  @include topConfig(0, 0, 0, 85vh);
+  @include basicConfig;
+  color: $col-white;
+  background-image: url(../img/black.jpg);
+  h1 {
+    color: $col-black;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+      0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1),
+      0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+
+    &:hover {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1),
+        0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+    }
+  }
+
+  .btn-submit {
+    cursor: pointer;
+    background-color: $col-lightblue;
+    color: $col-white;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: $col-pink;
+    }
+  }
+}

@@ -1,38 +1,37 @@
 /* Footer */
 footer {
-    color: #1b1f22;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  .social-buttons {
-    text-align: center;
-  }
-  
-  /* Style footer font awesome icons */
-  .fa {
-    padding: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #6a6e73;
-    font-size: 15px;
-    &:hover{
-        opacity: 0.7;
-        font-size: 20px;
-    }
-  }
+  color: #1b1f22;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+.social-buttons {
+  text-align: center;
+}
 
-  .fa-instagram:hover {
-    color: red;
+/* Style footer font awesome icons */
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #6a6e73;
+  font-size: 15px;
+  &:hover {
+    opacity: 0.7;
+    font-size: 20px;
   }
-  .fa-linkedin:hover {
-    color: blue;
-  }
-  .fa-envelope:hover {
-    color: orange;
-  }
-  .fa-whatsapp:hover {
-    color: green;
-  }
-  
+}
+
+.fa-instagram:hover {
+  color: red;
+}
+.fa-linkedin:hover {
+  color: blue;
+}
+.fa-envelope:hover {
+  color: orange;
+}
+.fa-whatsapp:hover {
+  color: green;
+}

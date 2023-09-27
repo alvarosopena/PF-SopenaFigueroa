@@ -1,17 +1,22 @@
-$col-black:#1b1f22;
-$col-darkblue:#092429;
+/* Fuentes */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Colores */
+$col-black: #1b1f22;
+$col-darkblue: #092429;
 $col-white: #fafafa;
 $col-lightblue: #24d1d3;
-$col-pink:#ff56d1;
+$col-pink: #ff56d1;
 $col-blue: #322566;
-$col-yellow:#e1ffb4;
+$col-yellow: #e1ffb4;
 
-paleta{
-    color: #fafafa;
-    color: #1b1f22;
-    color: #092429;
-    color: #322566;
-    color: #24d1d3;
-    color: #e1ffb4;
-    color: #ff56d1;
-  }
+paleta {
+  color: #fafafa;
+  color: #1b1f22;
+  color: #092429;
+  color: #322566;
+  color: #24d1d3;
+  color: #e1ffb4;
+  color: #ff56d1;
+}
