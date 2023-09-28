@@ -2,7 +2,7 @@
 -------------------------------------------------------------
 CUARTA ENTREGA | FINAL
 
-Se agregan más detalles en SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, se agregan imágenes y se reemplazan los lorem, y otros detalles de diseño
+Se agregan más detalles en SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, se agregan imágenes y se reemplazan los lorem, y otros detalles de diseño.
 Cuarta entrega | final: 28/09/2023
 
 Deploy: https://pf-sopenafigueroa.netlify.app/
@@ -12,7 +12,7 @@ Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
 -------------------------------------------------------------
 TERCER ENTREGA
 
-Se agrega SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, tamaños de imágenes, y otros detalles de diseño
+Se agrega SASS SCSS, SEO y Buenas Prácticas, se arregla el Responsive en las páginas, tamaños de imágenes, y otros detalles de diseño.
 Tercera entrega: 21/09/2023
 
 Deploy: https://pf-sopenafigueroa.netlify.app/
@@ -22,8 +22,8 @@ Repo: https://github.com/alvarosopena/PF-SopenaFigueroa
 -------------------------------------------------------------
 SEGUNDA ENTREGA 
 
-Apartir de la segunda entrega se va creando el Proyecto Final 
-Segunda etapa: HTML, CSS, Bootstrap o Grids + Flexbox + Git y GitHub
+Apartir de la segunda entrega se va creando el Proyecto Final.
+Segunda etapa: HTML, CSS, Bootstrap o Grids + Flexbox + Git y GitHub.
 
 Segunda entrega: 07/09/2023
 
