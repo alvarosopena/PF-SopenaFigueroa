@@ -4,12 +4,55 @@
 .name {
   font-size: 21px;
   color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
-    0 0 200px #ff003c, 0 0 300px #ff003c;
+  text-shadow: 0 0 0 transparent, 0 0 10px $col-pink, 0 0 20px $col-pink,
+    0 0 40px $col-pink, 0 0 100px $col-pink, 0 0 200px $col-pink,
+    0 0 300px $col-pink;
   -webkit-animation: blink 1s infinite alternate;
   animation: blink 1s infinite alternate;
   text-transform: uppercase;
+}
+
+
+.btn-outline-secondary {
+  --bs-btn-border-color: none;
+}
+
+.navList {
+  .nav-item {
+    button {
+      color: $col-white;
+      border-radius: 0;
+      animation: infinite resplandorAnimation 1s;
+      &:hover{
+        background-color: $col-pink;
+      }
+    }
+  }
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  margin: 0 auto;
+  .container-fluid {
+    color: $col-darkblue;
+  }
+  .navbar-toggler {
+    border: none;
+    border-radius: 0;
+  }
+  .navbar-toggler-icon {
+    font-size: 35px;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url(../img/hamburguesa2.png);
+  }
+}
+
+/* Color del nav */
+.bg-body-tertiary {
+  background-color: $col-darkblue !important;
 }
 
 @-webkit-keyframes blink {
@@ -47,47 +90,6 @@
   }
 }
 
-.btn-outline-secondary {
-  --bs-btn-border-color: none;
-}
-
-.navList {
-  .nav-item {
-    button {
-      color: $col-white;
-      border-radius: 0;
-      animation: infinite resplandorAnimation 1s;
-    }
-
-    button:hover {
-      background-color: $col-pink;
-    }
-  }
-}
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  z-index: 1000;
-  margin: 0 auto; /* Esto centra el elemento horizontalmente */
-  .container-fluid {
-    color: $col-darkblue;
-  }
-}
-.navbar-toggler {
-  border: none;
-  border-radius: 0;
-}
-.navbar-toggler-icon {
-  font-size: 35px;
-  width: 1.5em;
-  height: 1.5em;
-  background-image: url(../img/hamburguesa2.png);
-}
-.bg-body-tertiary {
-  background-color: $col-darkblue !important;
-}
-
 @keyframes resplandorAnimation {
   0%,
   18%,
@@ -96,8 +98,9 @@
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
-      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    text-shadow: 0 0 4px $col-white, 0 0 11px $col-white, 0 0 19px $col-white,
+      0 0 40px $col-pink, 0 0 80px $col-pink, 0 0 90px $col-pink,
+      0 0 100px $col-pink, 0 0 150px $col-pink;
   }
 
   20%,
