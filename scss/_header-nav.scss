@@ -2,11 +2,11 @@
 /* HEADER Y NAVBAR */
 
 .name {
-  font-size: 21px;
+  font-size: 18px;
   color: #ffd9e2;
   text-shadow: 0 0 0 transparent, 0 0 10px $col-pink, 0 0 20px $col-pink,
-    0 0 40px $col-pink, 0 0 100px $col-pink, 0 0 200px $col-pink,
-    0 0 300px $col-pink;
+    0 0 40px $col-pink, 0 0 100px $col-pink, 0 0 150px $col-pink,
+    0 0 180px $col-pink;
   -webkit-animation: blink 1s infinite alternate;
   animation: blink 1s infinite alternate;
   text-transform: uppercase;
@@ -44,9 +44,15 @@
   }
   .navbar-toggler-icon {
     font-size: 35px;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.4em;
+    height: 1.4em;
     background-image: url(../img/hamburguesa2.png);
+  }
+  .container-fluid{
+    
+    padding: 0px;
+   
+
   }
 }
 
@@ -100,7 +106,7 @@
   100% {
     text-shadow: 0 0 4px $col-white, 0 0 11px $col-white, 0 0 19px $col-white,
       0 0 40px $col-pink, 0 0 80px $col-pink, 0 0 90px $col-pink,
-      0 0 100px $col-pink, 0 0 150px $col-pink;
+      0 0 100px $col-pink, 0 0 140px $col-pink;
   }
 
   20%,
